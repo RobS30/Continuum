@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Continuum - Booking</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/ae5c3de3a7.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default sticky-top bg-black">
+        <div class="container-fluid d-flex justify-content-start">
+            <a class="navbar-brand" href="index.html">Continuum</a>
+            <a class="navbar-link p-3" href="destination.html">Destinations</a>
+            <a class="navbar-link p-3" href="booking.html">Booking</a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <form class="mt-5">
+                    <div class="form-group">
+                        <label class="label-gray" for="first-name">First Name</label>
+                        <input class="form-control" id="first-name" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label class="label-gray" for="last-name">Last Name</label>
+                        <input class="form-control" id="last-name" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label class="label-gray" for="email">Email</label>
+                        <input class="form-control" id="email" type="email">
+                    </div>
+                    <div class="form-group">
+                        <label class="label-gray" for="phone">Phone Number</label>
+                        <input class="form-control" id="phone" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label class="label-gray" for="passengers">Number of Passengers</label>
+                        <input class="form-control" id="passengers" type="number">
+                    </div>
+                    <div class="form-group">
+                        <label class="label-gray" for="destination">Destination</label>
+                        <select class="form-control" id="destination">
+                            <option>Mars</option>
+                            <option>Jupiter</option>
+                            <option>Kepler 16-b</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="label-gray" for="speed">Travel Speed</label>
+                        <select class="form-control" id="speed">
+                            <option>Conventional Rocket</option>
+                            <option>Warp Speed!</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="submit"><i class="fas fa-rocket"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
+        </script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-database.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+
+</html>
