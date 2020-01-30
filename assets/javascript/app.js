@@ -1,13 +1,14 @@
 $(document).ready(function () {
     // Intialize firebase
+    // need to go back and add configuration
     var firebaseConfig = {
-        apiKey: "AIzaSyATFDUF2_xSvh_GtpEHJyy6zvdeMUUoXaA",
-        authDomain: "continuum-7ea8b.firebaseapp.com",
-        databaseURL: "https://continuum-7ea8b.firebaseio.com",
-        projectId: "continuum-7ea8b",
+        apiKey: "",
+        authDomain: "",
+        databaseURL: "",
+        projectId: "",
         storageBucket: "",
-        messagingSenderId: "755582892592",
-        appId: "1:755582892592:web:a171da16a813efa4"
+        messagingSenderId: "",
+        appId: ""
     };
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
@@ -76,7 +77,7 @@ $(document).ready(function () {
         var callYouTubeAPI = function () {
 
             var youtubeURL = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&q=" +
-                searchLocation + "&key=AIzaSyBwnn85wMUw6B5v3IqxC2R54yYytQu2ChQ";
+                searchLocation + "";
 
             console.log(searchLocation);
 
